@@ -1,0 +1,106 @@
+html {
+    --farbe-Blau: #52bdff;
+}
+
+* {
+    margin: 0;
+}
+
+.top {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: white;
+    height: 5rem;
+}
+
+.box {
+    margin: 5px 0 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.box .inp {
+    font-size: x-large;
+    border: solid blueviolet 1px;
+    border-radius: 10px;
+}
+
+.box .btn {
+    margin-left: 15px;
+    font-size: x-large;
+    border-radius: 10px;
+    border: none;
+    height: 3rem;
+    width: 35rem;
+    background-color: #52bdff;
+    box-shadow: none;
+}
+
+.navLink {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.logo {
+    width: 33%;
+    display: flex;
+    justify-content: left;
+    vertical-align: middle;
+}
+
+.icons {
+    width: 33%;
+    display: flex;
+    justify-content: right;
+}
+
+.linkBox {
+    width: 33%;
+    height: 1.5rem;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.navLink {
+    margin-left: 5px;
+}
+.navLink:hover {
+    color: blueviolet;
+}
+
+.background {
+    width: 100%;
+}
+
+@media only screen and (max-width: 880px){
+.top {
+    position: relative;
+    align-items: left;
+    height: fit-content;
+    flex-direction: column;
+}
+.logo{
+    height: 50px;
+    align-items: center;
+    margin: 0px 0px 0px 0px;
+}
+.icons {
+    height: 50px;
+    align-items: center;
+    margin: 0px 0px 0px 0px;
+    width: fit-content;
+}
+.linkBox {
+    display: flex;
+    width: fit-content;
+    height: 15px;
+    margin: 0px 0px 0px 0px;
+    margin-left: 15px;
+}
+}
